@@ -33,6 +33,25 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
-When you hit "Generate Password" a prompt window will appear asking how many characters do you need
+
+# Pseudocode
+
+1. Add function to "Generate Password" button to generate a prompt
+2. Prompt user to enter how many characters he needs for his password
+    
+    * If user imput doesn't match 8 to 128 characters criteria
+    > First alert: You must choose between 8 and 128
+    > Second alert: You must choose a criteria
+    
+    * If user imput doesn't match number criteria for 8 and 128 and writes an alpha imput
+    > Alert: Enter a value
+
+3. After typing the imput it will start the questions about the criteria
+4. Validate user imput
+5. Statements that uses user input prompts to determine choices
+6. Variable to fill uppercase conversion > In case the user choose uppercase
+7. Random selection for all variables
+8. Show password on Secure Password Box
+
 
 
